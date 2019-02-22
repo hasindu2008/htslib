@@ -50,6 +50,7 @@ HTSLIB_PUBLIC_HEADERS = \
 	$(HTSDIR)/htslib/bgzf.h \
 	$(HTSDIR)/htslib/cram.h \
 	$(HTSDIR)/htslib/faidx.h \
+	$(HTSDIR)/htslib/ftidx.h \
 	$(HTSDIR)/htslib/hfile.h \
 	$(HTSDIR)/htslib/hts.h \
 	$(HTSDIR)/htslib/hts_defs.h \
@@ -82,6 +83,7 @@ HTSLIB_ALL = \
 	$(HTSDIR)/config.h \
 	$(HTSDIR)/errmod.c \
 	$(HTSDIR)/faidx.c \
+	$(HTSDIR)/ftidx.c \
 	$(HTSDIR)/hfile_internal.h \
 	$(HTSDIR)/hfile.c \
 	$(HTSDIR)/hfile_gcs.c \

@@ -132,6 +132,7 @@ LIBHTS_OBJS = \
 	bgzf.o \
 	errmod.o \
 	faidx.o \
+	ftidx.o \
 	hfile.o \
 	hfile_net.o \
 	hts.o \
@@ -304,6 +305,7 @@ vcf.o vcf.pico: vcf.c config.h $(htslib_vcf_h) $(htslib_bgzf_h) $(htslib_tbx_h) 
 sam.o sam.pico: sam.c config.h $(htslib_sam_h) $(htslib_bgzf_h) $(cram_h) $(hts_internal_h) $(htslib_hfile_h) $(htslib_khash_h) $(htslib_kseq_h) $(htslib_kstring_h) $(htslib_hts_endian_h)
 tbx.o tbx.pico: tbx.c config.h $(htslib_tbx_h) $(htslib_bgzf_h) $(htslib_hts_endian_h) $(hts_internal_h) $(htslib_khash_h)
 faidx.o faidx.pico: faidx.c config.h $(htslib_bgzf_h) $(htslib_faidx_h) $(htslib_hfile_h) $(htslib_khash_h) $(htslib_kstring_h) $(hts_internal_h)
+ftidx.o ftidx.pico: ftidx.c config.h $(htslib_bgzf_h) $(htslib_ftidx_h) $(htslib_hfile_h) $(htslib_khash_h) $(htslib_kstring_h) $(hts_internal_h)
 bcf_sr_sort.o bcf_sr_sort.pico: bcf_sr_sort.c config.h $(bcf_sr_sort_h) $(htslib_khash_str2int_h)
 synced_bcf_reader.o synced_bcf_reader.pico: synced_bcf_reader.c config.h $(htslib_synced_bcf_reader_h) $(htslib_kseq_h) $(htslib_khash_str2int_h) $(htslib_bgzf_h) $(htslib_thread_pool_h) $(bcf_sr_sort_h)
 vcf_sweep.o vcf_sweep.pico: vcf_sweep.c config.h $(htslib_vcf_sweep_h) $(htslib_bgzf_h)
